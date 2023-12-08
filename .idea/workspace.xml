@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b936ec8-6041-42a7-aac4-e080a5f54618" name="Changes" comment="" />
+    <list default="true" id="4b936ec8-6041-42a7-aac4-e080a5f54618" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/UserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/UserTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,12 +23,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Alexi118"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Alexi118&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -45,14 +48,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/IntelliJ Projects/PetStoreAPIdemo"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/IntelliJ Projects/PetStoreAPIdemo&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="TestNG.UserTests">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
@@ -116,6 +119,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserTests.testGetReadUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="petstoreAPIDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.UserTests" />
+      <option name="METHOD_NAME" value="testGetReadUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserTests.testPostUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="petstoreAPIDemo" />
       <extension name="coverage">
@@ -137,6 +158,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.UserTests" />
+        <item itemvalue="TestNG.UserTests.testGetReadUser" />
         <item itemvalue="TestNG.UserTests.testPostUser" />
         <item itemvalue="TestNG.UserTests (2)" />
         <item itemvalue="TestNG.UserTests (1)" />

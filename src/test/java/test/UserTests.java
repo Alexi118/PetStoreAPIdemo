@@ -3,6 +3,7 @@ package test;
 import com.github.javafaker.Faker;
 import endpoints.UserEndPoints;
 import io.restassured.response.Response;
+import org.apache.xmlbeans.impl.xb.xsdschema.Attribute;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -28,11 +29,50 @@ public class UserTests {
         System.out.println(userPayload.printPayload());
     }
 
-    @Test
-    public void testPostUser(){
+    @Test(priority = 1)
+    public void testPOSTCreateUserByName(){
         Response response = UserEndPoints.createUser(userPayload);
         response.then().log().all();
         Assert.assertEquals(response.getStatusCode(),200);
-        //Assert.assertEquals(response.getBody().jsonPath(), "unknown");
+        Assert.assertEquals(response.getBody().jsonPath().get("type"),"unknown");
     }
+    @Test(priority = 2)
+    public void testGETReadUserByName(){
+        Response response = UserEndPoints.readUser(this.userPayload.getUsername());
+        response.then().log().all();
+        Assert.assertEquals(response.getStatusCode(),200);
+
+        //Verify Data is the same as in payload on CREATE
+        System.out.println(response.getBody().asString());
+        //{"id":68377659,"username":"odell.doyle","firstName":"Cherilyn","lastName":"Prosacco","email":"benjamin.gottlieb@example.com","password":"vv25qc","phone":"898-007-8135","userStatus":0}
+    }
+//    @Test(priority = 3)
+//    public void testPUTUpdateUserByName(){
+//        //Update user data
+//        userPayload.setFirstName(faker.name().firstName());
+//        userPayload.setLastName(faker.name().lastName());
+//        userPayload.setEmail(faker.internet().safeEmailAddress());
+//
+//        Response response = UserEndPoints.updateUser(userPayload,this.userPayload.getUsername());
+//        response.then().log().body();
+//        Assert.assertEquals(response.getStatusCode(),200);
+//
+//        //Verify user data is updated
+//        Response responseAfterUpdated = UserEndPoints.readUser(this.userPayload.getUsername());
+//        responseAfterUpdated.then().log().all();
+//        Assert.assertEquals(responseAfterUpdated.getStatusCode(),200);
+//    }
+//    @Test(priority = 4)
+//    public void testDELETEdeleteUserByName(){
+//        Response response = UserEndPoints.deleteUser(this.userPayload.getUsername());
+//        response.then().log().all();
+//        Assert.assertEquals(response.getStatusCode(),200);
+//
+//        //Verify User is deleted
+//        Response responseAfterUpdated = UserEndPoints.readUser(this.userPayload.getUsername());
+//        responseAfterUpdated.then().log().all();
+//        Assert.assertEquals(responseAfterUpdated.getStatusCode(),404);
+//        Assert.assertEquals(responseAfterUpdated.getBody().jsonPath().get("type"),"error");
+//        Assert.assertEquals(responseAfterUpdated.getBody().jsonPath().get("message"),"User not found");
+//    }
 }
