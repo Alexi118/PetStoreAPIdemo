@@ -17,6 +17,26 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Alexi118"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d4c80cb4-99bd-4083-9976-ac407ca61ad1" />
+        <option name="url" value="https://github.com/Alexi118/PetStoreAPIdemo.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -25,13 +45,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/IntelliJ Projects/PetStoreAPIdemo"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.UserTests.testPostUser">
+}]]></component>
+  <component name="RunManager" selected="TestNG.UserTests">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,10 +136,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.UserTests" />
         <item itemvalue="TestNG.UserTests.testPostUser" />
         <item itemvalue="TestNG.UserTests (2)" />
         <item itemvalue="TestNG.UserTests (1)" />
-        <item itemvalue="TestNG.UserTests" />
       </list>
     </recent_temporary>
   </component>
