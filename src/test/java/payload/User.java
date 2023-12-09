@@ -76,15 +76,14 @@ public class User {
 
     public String printPayload() {
 
-        return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                ", phone='" + phone + '\'' +
-                ", userStatus=" + userStatus +
+        return  '{' + "\"id\":" + id +
+                ",\"username\":" + "\"" + username + "\"" +
+                ",\"firstName\":" + "\"" + firstName + "\"" +
+                ",\"lastName\":" + "\"" + lastName + "\"" +
+                ",\"email\":" + "\"" + email + "\"" +
+                ",\"password\":" + "\"" + password + "\"" +
+                ",\"phone\":" + "\"" + phone + "\"" +
+                ",\"userStatus\":" + userStatus +
                 '}';
 
     }

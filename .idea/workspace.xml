@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4b936ec8-6041-42a7-aac4-e080a5f54618" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/payload/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/payload/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/UserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/UserTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,23 +69,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="petstoreAPIDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.UserTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserTests (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="petstoreAPIDemo" />
       <extension name="coverage">
@@ -113,6 +97,24 @@
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.UserTests" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTests.testGETReadUserByName" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="petstoreAPIDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.UserTests" />
+      <option name="METHOD_NAME" value="testGETReadUserByName" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -158,10 +160,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.UserTests" />
+        <item itemvalue="TestNG.UserTests.testGETReadUserByName" />
         <item itemvalue="TestNG.UserTests.testGetReadUser" />
         <item itemvalue="TestNG.UserTests.testPostUser" />
         <item itemvalue="TestNG.UserTests (2)" />
-        <item itemvalue="TestNG.UserTests (1)" />
       </list>
     </recent_temporary>
   </component>
